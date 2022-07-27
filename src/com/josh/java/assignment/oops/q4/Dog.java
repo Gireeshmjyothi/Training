@@ -13,6 +13,9 @@ public class Dog extends Animal {
 		System.out.println("woof");
 	}
 
+	/*
+	 * this is the specific method of Dog class
+	 */
 	public void greets(Dog a) {
 		System.out.println("woooof");
 	}

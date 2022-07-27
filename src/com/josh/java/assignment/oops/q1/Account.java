@@ -1,12 +1,14 @@
 package com.josh.java.assignment.oops.q1;
 
 public class Account {
-	//Instance variables
-	private String id;
+	// Providing security for Account class data members using private key
+	private  String id;
 	private String name;
 	private int balance;
 
-	// Contractor  is used to initialize object
+	/*
+	 * Contractor is used to initialize object
+	 */
 	public Account(String id, String name) {
 		this.id = id;
 		this.name = name;
@@ -18,7 +20,9 @@ public class Account {
 		this.balance = balance;
 	}
 
-	//Providing private data members using public getId method 
+	/*
+	 * Providing private data members using public getId method
+	 */
 	public String getID() {
 		return this.id;
 	}
@@ -31,12 +35,16 @@ public class Account {
 		return this.balance;
 	}
 
-	//credit method is used to add amount to existing balance
+	/*
+	 * credit method is used to add amount to existing balance
+	 */
 	public void credit(int amount) {
 		balance = balance + amount;
 	}
 
-	// debt   it method is used to  subtract amount from balance
+	/*
+	 * debt it method is used to subtract amount from balance
+	 */
 	public void debit(int amount) {
 		if (amount <= balance) {
 			balance = balance - amount;
@@ -45,7 +53,9 @@ public class Account {
 		}
 	}
 
-	// transfer amount to the given Account
+	/*
+	 * transfer amount to the given Account
+	 */
 	public void transferTo(Account a, int amount) {
 		if (amount <= balance) {
 			a.balance = a.balance + amount;

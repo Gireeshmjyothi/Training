@@ -1,10 +1,15 @@
 package com.josh.java.assignment.oops.q4;
 
+/*
+ * Here abstract class is giving greets method to sub-classes
+ */
 public abstract class Animal {
-	// instance variable of Animal class
+
 	String name;
 
-	// generating construct to initialize name of Animal
+	/*
+	 * generating construct to initialize name of Animal
+	 */
 	public Animal(String name) {
 		this.name = name;
 	}

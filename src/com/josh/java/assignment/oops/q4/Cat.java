@@ -9,7 +9,9 @@ public class Cat extends Animal {
 		this.name = name;
 	}
 
-	// here overriding abstract class method greets();
+	/*
+	 * Here the implementation of the 'greets' method is invoked
+	 */
 	@Override
 	public void greets() {
 		System.out.println("Meow");
