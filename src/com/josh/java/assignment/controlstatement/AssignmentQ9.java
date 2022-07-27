@@ -1,4 +1,4 @@
-package com.josh.java.assignment;
+package com.josh.java.assignment.controlstatement;
 
 import java.util.Scanner;
 
