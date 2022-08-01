@@ -1,6 +1,6 @@
 package com.josh.java.assignment.oops.q4;
 
-// Dog class extending(or acquiring properties) Animal class
+
 public class Dog extends Animal {
 
 	public Dog(String name) {

@@ -3,9 +3,6 @@ package com.josh.java.assignment.oops.q4;
 public class BigDog extends Dog {
 
 	public BigDog(String name) {
-		/*
-		 * Calling Dog class parameterized constructor
-		 */
 		super(name);
 	}
 

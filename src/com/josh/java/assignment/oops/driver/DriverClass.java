@@ -7,6 +7,7 @@ import com.josh.java.assignment.oops.q4.Animal;
 import com.josh.java.assignment.oops.q4.BigDog;
 import com.josh.java.assignment.oops.q4.Cat;
 import com.josh.java.assignment.oops.q4.Dog;
+  
 
 /*
  * This Driver class which will execute multiple classes.
@@ -26,9 +27,8 @@ public class DriverClass {
 			// here we are adding some amount to the created account
 			account1.credit(1000);
 			System.out.println(account1.toString());
-			/*
-			 * here we are creating another account and passing the arguments
-			 */
+		
+			 //here we are creating another account and passing the arguments
 			Account account2 = new Account("647", "Subhra");
 			// before passing amount to the account
 			System.out.println(account2.toString());
@@ -50,16 +50,16 @@ public class DriverClass {
 			dog.greets();
 
 			// here doing down-casting to Dog type to access specific properties of Dog
-			Dog d = (Dog) dog;
-			d.greets(d);
+			Dog dogref = (Dog) dog;
+			dogref.greets(dogref);
 
 			Animal bigdog = new BigDog("Loki");
 			bigdog.greets();
 
 			// Down-casting to BigDog type to access specific properties of BigDog class
-			BigDog bg = (BigDog) bigdog; 
-			bg.greets(d);
-			bg.greets(bg);
+			BigDog bigdogref = (BigDog) bigdog; 
+			bigdogref.greets(dogref);
+			bigdogref.greets(bigdogref);
 			break;
 
 		default: {

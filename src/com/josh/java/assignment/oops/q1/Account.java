@@ -1,5 +1,8 @@
 package com.josh.java.assignment.oops.q1;
 
+import lombok.Data;
+
+@Data
 public class Account {
 	// Providing security for Account class data members using private key
 	private  String id;
@@ -19,22 +22,6 @@ public class Account {
 		this.name = name;
 		this.balance = balance;
 	}
-
-	/*
-	 * Providing private data members using public getId method
-	 */
-	public String getID() {
-		return this.id;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public int getBalance() {
-		return this.balance;
-	}
-
 	/*
 	 * credit method is used to add amount to existing balance
 	 */
